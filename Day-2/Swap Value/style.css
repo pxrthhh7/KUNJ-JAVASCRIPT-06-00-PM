@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main 
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: darkcyan;
+}
+
+.main .mainLeft,
+.main .mainRight
+{
+    border: 2px solid black;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.main .mainLeft h1,
+.main .mainRight h1
+{
+    position: fixed;
+    top: 0;
+}
+.main .mainLeft input {
+    border: 2px solid black;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    background-color: darkgray;
+    outline: none;
+    margin-top: 3px;
+}
+.main .mainLeft input::placeholder {
+    color: black;
+}
+
+.main .mainLeft button {
+    border: 2px solid black;
+    width: 100px;
+    height: 30px;
+    background-color: darkgray;
+    cursor: pointer;
+}
+.main .mainRight h2
+{
+    margin-bottom: 10px;
+}
+
+.main .mainRight .before,
+.main .mainRight .after 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
