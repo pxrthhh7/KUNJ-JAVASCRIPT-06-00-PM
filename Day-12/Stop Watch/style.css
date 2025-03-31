@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: black;
+}
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.main h1 {
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+.main input {
+    width: 250px;
+    height: 40px;
+    padding-left: 10px;
+    border: 2px solid grey;
+    outline: none;
+    background-color: black;
+    color: white;
+}
+.main button {
+    width: 120px;
+    height: 35px;
+    cursor: pointer;
+    color: white;
+    border: 2px solid grey;
+    background-color: black;
+    transition: ease-in-out 0.3s;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.main button:hover 
+{
+    border: 2px solid white;
+    color: grey;
+    transition: ease-in-out 0.3s;
+}
+.main h2
+{
+    color: white;
+}
+.main span
+{
+    color: grey;
+}
