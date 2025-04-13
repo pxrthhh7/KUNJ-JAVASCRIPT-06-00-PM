@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container
+{
+    width: 35%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+h1
+{
+    position: absolute;
+    top: 40px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(214, 148, 61);
+}
+
+form
+{
+    /* border: 1px solid blue; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.row
+{   
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+label
+{
+    font-size: 13px;
+    position: absolute;
+    top: 0;
+    left: 11%;
+}
+label.error
+{
+    color: red;
+    font-size: 14px;
+    top: 75%;
+    left: 11%;
+}
+span
+{
+    color: red;
+}
+
+input 
+{
+    width: 80%;
+    height: 30px;
+    padding-left: 8px;
+    outline: none;
+}
+
+button
+{
+    width: 80%;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(214, 148, 61);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
