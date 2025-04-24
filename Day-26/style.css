@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Assets/mainBG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(40, 38, 38);
+    background-blend-mode: overlay;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.main .sub
+{
+    width: 50%;
+    height: 70vh;
+    background-image: url(Assets/background.jpg);
+    display: flex;
+}
+.sub .subLeft
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    color: white;
+    font-family: "Inter", sans-serif;
+    padding-inline: 35px;
+    padding-block: 25px;
+    position: relative;
+}
+.subLeft span
+{
+    font-size: 11px;
+}
+.subLeft h1
+{
+    font-size: 70px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 40px;
+}
+.subLeft h2
+{
+    margin-top: 12px;
+    font-size: 23px;
+    font-weight: 300;
+}
+.subLeft h6
+{
+    font-weight: 500;
+    position: absolute;
+    bottom: 32px;
+}
+.sub .subRight
+{
+    width: 45%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.509);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Inter", sans-serif;
+}
+.subRight .Rsub
+{
+    border-bottom: 1.5px solid white;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.701);
+}
+.Rsub .boxL
+{
+    width: 50%;
+    height: 100%;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 5px;
+}
+.boxL span
+{
+    font-size: 11px;
+    font-weight: 400;
+}
+.boxL h6
+{
+    font-size: 25px;
+    font-weight: 400;
+}
+.Rsub .boxR
+{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+.inpt
+{
+    display: flex;
+    gap: 20px;
+}
+.inpt input
+{
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+}
+.inpt button
+{
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
