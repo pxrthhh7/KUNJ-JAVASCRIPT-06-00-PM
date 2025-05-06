@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ICONIFY -->
+    <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+    <!-- ICONIFY -->
+  </head>
+  <body>
+    <div class="containermain bg-[url(/Assets/bg-2.jpg)] bg-cover bg-center w-full h-[100vh] flex items-center justify-center md:justify-start md:pl-[120px] mx-auto">
+      <div class="main w-[80%] sm:w-[350px] h-[400px] border border-[#7a77776d] rounded-[2px] flex flex-col items-center px-[20px] py-[20px]">
+        <h1 class="text-[22px] mb-[20px] text-center">Currency Converter</h1>
+        <form action="" id="myform" class="w-full h-full flex flex-col justify-between">
+          <div class="R1 flex flex-col w-full">
+            <label for="number">Enter Amount</label>
+            <input type="number" id="Amount" class="w-full outline-none bg-[#ffffff15] rounded-[4px] pl-[16px] h-[35px] mt-[5px]" required>
+          </div>
+          <div class="R2 w-full flex justify-between relative">
+            <div class="flex flex-col items-start">
+              <label for="FromCurrency">From</label>
+              <select name="FromCurrency" id="FromCurrency" class="outline-none bg-[#ffffff15] rounded-[4px] h-[35px] pl-[5px] w-[90%] sm:min-w-[140px]  sm:max-w-[140px]" required>
+              </select>
+            </div>
+            <div class="flex flex-col">
+              <label for="ToCurrency">To</label>
+              <select name="ToCurrency" id="ToCurrency" class="outline-none bg-[#ffffff15] rounded-[4px] h-[35px] pl-[5px] w-[90%] sm:min-w-[140px] sm:max-w-[140px]" required>
+              </select>
+            </div>
+          </div>
+          <button id="cnvrtBtn" type="submit" class="w-full h-[40px] bg-[#ffffff15] border-none rounded-[4px]">Get Exchange Rate</button>
+          <span id="Output" class="w-full h-[40px] bg-[#ffffff15] rounded-[4px] flex justify-center items-center">Output</span>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
