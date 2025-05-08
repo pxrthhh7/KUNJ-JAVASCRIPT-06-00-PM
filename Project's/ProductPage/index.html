@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer flex relative">
+        <div class="sidebar w-[20%] min-h-[100vh] flex flex-col p-9 border-r-2 border-[#3d869e] fixed">
+            <form action="">
+                <select id="category" class="border-2 border-[#3d869e] outline-none w-full h-[40px] px-1 mb-10" onchange="filter()">
+                    <option class="" value="All">All</option>
+                    <option class="" value="men's clothing">Men's Clothing</option>
+                    <option class="" value="women's clothing">Women's clothing</option>
+                    <option class="" value="jewelery">Jewelery</option>
+                    <option class="" value="electronics">Electronics</option>
+                </select>
+            </form>
+        </div>
+        <div class="productPage w-[80%] min-h-[100vh] flex flex-wrap gap-[50px] py-[100px] px-[80px] absolute top-0 right-0">
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
