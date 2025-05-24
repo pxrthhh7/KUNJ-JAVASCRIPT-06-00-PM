@@ -18,7 +18,8 @@ async function fetchItem(category) {
         .then(res => {
 
             res.forEach(element => {
-                if (category == 'All' || element.category == category) {
+                if (category == 'All' || element.category == category) 
+                {
                     let card = document.createElement("div")
                     card.setAttribute("class", "card w-[250px] h-[350px] flex flex-col")
                     let cardUP = document.createElement("div")
