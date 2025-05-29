@@ -5,29 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style>
-    @layer utilities {
-      .glass {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 20px;
-        backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-      }
-      .glass-animation {
-        animation: fadeIn 1.2s ease-out forwards;
-      }
-      @keyframes fadeIn {
-        0% {
-          opacity: 0;
-          transform: scale(0.9);
-        }
-        100% {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80');">
   <div class="flex justify-center items-center h-full">

@@ -1,3 +1,4 @@
+// Sign Up Form
 let signup = document.getElementById("signupForm");
 
 if (signup) {
@@ -26,6 +27,7 @@ if (signup) {
     });
 }
 
+// Log In Form
 let login = document.getElementById("loginForm");
 
 if (login) {
@@ -52,6 +54,7 @@ if (login) {
     });
 }
 
+// Forget Form
 let forget = document.getElementById("forgetForm")
 
 if (forget) {
@@ -79,6 +82,7 @@ if (forget) {
     })
 }
 
+// OTP Form
 let otp = document.getElementById("otpForm")
 
 if (otp) {
@@ -109,6 +113,7 @@ if (otp) {
     })
 }
 
+// RESET PASSWORD Form
 let reset = document.getElementById("resetForm")
 
 if (reset) {
@@ -134,6 +139,7 @@ if (reset) {
     })
 }
 
+// LOG OUT Form
 let logout = document.getElementById("logout")
 
 if (logout) {
@@ -144,6 +150,7 @@ if (logout) {
     })
 }
 
+// OTP GENERATOR
 function generateOTP() {
     let otp = '';
     for (let i = 0; i < 4; i++) {
