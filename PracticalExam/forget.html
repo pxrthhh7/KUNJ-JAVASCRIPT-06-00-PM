@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @layer utilities {
+      .glass {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .glass-animation {
+        animation: fadeIn 1.2s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  </style>
+</head>
+<body class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80');">
+  <div class="flex justify-center items-center h-full">
+    <div class="w-full sm:w-11/12 md:w-8/12 lg:w-6/12 xl:w-5/12 p-8 glass rounded-2xl shadow-xl glass-animation">
+      <h2 class="text-center text-2xl font-semibold text-white mb-6">Forgot Password</h2>
+      <form id="forgetForm">
+        <div class="mb-6">
+          <input 
+            id="email"
+            type="email" 
+            placeholder="Enter your email" 
+            required 
+            class="w-full py-3 px-4 text-white placeholder-gray-300 bg-transparent border-2 border-gray-300 rounded-lg focus:border-teal-300 outline-none"
+          >
+        </div>
+
+        <div class="text-center mb-6">
+          <a href="login.html" class="text-teal-300 text-sm hover:text-teal-400 transition duration-300">Back to Login</a>
+        </div>
+
+        <button 
+          type="submit" 
+          class="w-full py-3 bg-teal-400 text-white rounded-xl text-lg hover:bg-teal-500 transition duration-300"
+        >
+          Get otp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

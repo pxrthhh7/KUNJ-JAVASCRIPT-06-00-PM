@@ -20,22 +20,22 @@ myform.addEventListener('submit', function(e) {
     const taskKey = 'task_' + new Date().getTime();
 
     let taskList = document.createElement("div");
-    taskList.setAttribute("class", "taskList w-[350px] min-h-[40px] rounded-[50px] mb-[15px] bg-[#2828287d] py-2 flex gap-2 pl-[25px] px-[20px] items-center");
+    taskList.setAttribute("class", "taskList w-[290px] sm:w-[350px] min-h-[40px] rounded-[50px] mb-[15px] bg-[#2828287d] py-2 flex gap-2 pl-[25px] px-[20px] items-center");
     
     let output = document.createElement("span");
     output.setAttribute("class", "break-words text-white w-full max-w-[70%]");
 
     let btns = document.createElement("div");
-    btns.setAttribute("class", "btns flex justify-end items-center gap-[9px] w-[30%]");
+    btns.setAttribute("class", "btns flex justify-end items-center gap-[9px] w-[35%] sm:w-[30%]");
 
     let edit = document.createElement("button");
-    edit.setAttribute("class", "edit w-[35px] h-[35px] rounded-full flex justify-center items-center bg-[#6d6b6bce]");
+    edit.setAttribute("class", "edit w-[30px] sm:w-[35px] h-[30px] sm:h-[35px] rounded-full flex justify-center items-center bg-[#6d6b6bce]");
 
     let pencil = document.createElement("iconify-icon");
     pencil.setAttribute("icon", "bxs:pencil");
 
     let delet = document.createElement("button");
-    delet.setAttribute("class", "delete w-[35px] h-[35px] rounded-full flex justify-center items-center bg-[#6d6b6bce]");
+    delet.setAttribute("class", "delete w-[30px] sm:w-[35px] h-[30px] sm:h-[35px] rounded-full flex justify-center items-center bg-[#6d6b6bce]");
 
     let bin = document.createElement("iconify-icon");
     bin.setAttribute("icon", "solar:trash-bin-2-bold");
@@ -64,7 +64,7 @@ myform.addEventListener('submit', function(e) {
         taskList.replaceChild(input, output);
 
         let savebtn = document.createElement("button");
-        savebtn.setAttribute("class" , "w-[35px] h-[35px] rounded-[50%] bg-[#6d6b6bce] flex items-center justify-center");
+        savebtn.setAttribute("class" , "w-[30px] sm:w-[35px] h-[30px] sm:h-[35px] rounded-[50%] bg-[#6d6b6bce] flex items-center justify-center");
         savebtn.setAttribute("type" , "submit");
 
         let saveicon = document.createElement("iconify-icon");
@@ -92,9 +92,9 @@ myform.addEventListener('submit', function(e) {
                     taskList.replaceChild(output, input);
                     output.innerHTML = Cookies.get(taskKey);
                 }
+                btns.replaceChild(edit, savebtn);
             }
 
-            btns.replaceChild(edit, savebtn);
         });
     });
 

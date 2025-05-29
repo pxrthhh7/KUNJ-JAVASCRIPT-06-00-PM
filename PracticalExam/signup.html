@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    @layer utilities {
+      .glass {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+      }
+      .glass-animation {
+        animation: fadeIn 1.2s ease-out forwards;
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: scale(0.9);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  </style>
+</head>
+<body class="bg-cover bg-center h-screen" style="background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1920&q=80');">
+  <div class="flex justify-center items-center h-full">
+    <div class="w-full sm:w-11/12 md:w-8/12 lg:w-6/12 xl:w-5/12 p-8 glass rounded-2xl shadow-xl glass-animation">
+      <h2 class="text-center text-2xl font-semibold text-white mb-6">CREATE ACCOUNT</h2>
+      <form id="signupForm">
+        <!-- Full Name Input -->
+        <div class="relative mb-6">
+          <input type="text" id="name" required placeholder=" " class="w-full py-3 px-3 text-white bg-transparent border-b-2 border-gray-300 rounded-md focus:border-teal-300 outline-none text-lg">
+          <label for="name" class="absolute left-3 top-2 text-gray-400 transition-all transform scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-teal-300 peer-focus:scale-75">Full Name</label>
+        </div>
+
+        <!-- Email Input -->
+        <div class="relative mb-6">
+          <input type="email" id="email" required placeholder=" " class="w-full py-3 px-3 text-white bg-transparent border-b-2 border-gray-300 rounded-md focus:border-teal-300 outline-none text-lg">
+          <label for="email" class="absolute left-3 top-2 text-gray-400 transition-all transform scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-teal-300 peer-focus:scale-75">Email</label>
+        </div>
+
+        <!-- Password Input -->
+        <div class="relative mb-6">
+          <input type="password" id="password" required placeholder=" " class="w-full py-3 px-3 text-white bg-transparent border-b-2 border-gray-300 rounded-md focus:border-teal-300 outline-none text-lg">
+          <label for="password" class="absolute left-3 top-2 text-gray-400 transition-all transform scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-teal-300 peer-focus:scale-75">Password</label>
+        </div>
+
+        <!-- Confirm Password Input -->
+        <div class="relative mb-6">
+          <input type="password" id="confirm" required placeholder=" " class="w-full py-3 px-3 text-white bg-transparent border-b-2 border-gray-300 rounded-md focus:border-teal-300 outline-none text-lg">
+          <label for="confirm" class="absolute left-3 top-2 text-gray-400 transition-all transform scale-75 origin-top-left peer-placeholder-shown:scale-100 peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-500 peer-focus:top-0 peer-focus:text-teal-300 peer-focus:scale-75">Confirm Password</label>
+        </div>
+
+        <!-- Links for already have an account -->
+        <div class="text-center text-sm mb-4">
+          <a href="login.html" class="text-teal-200 hover:text-teal-300">Already have an account? Log In</a>
+        </div>
+
+        <!-- Sign Up Button -->
+        <button type="submit" class="w-full py-3 bg-teal-400 text-white rounded-xl text-lg hover:bg-teal-500 transition duration-300">Sign Up</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
